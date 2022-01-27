@@ -36,5 +36,6 @@ def update_popular():
     for manga in list_five_pop:
         # manga doit être ajouté dans le append pour prendre les valeurs de la base de données
         popular.append({'img': 'logo.png', 'desc':'update'}) # Valeur factice dans le append
+        popular.append({'img': 'test_home.png', 'desc':'update'}) # Valeur factice dans le append
     return popular        
 
