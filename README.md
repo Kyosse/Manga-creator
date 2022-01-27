@@ -27,16 +27,16 @@ Module python utilisées :
 - [x] Se renseigner sur le coté serveur
   - [ ] Réglé le problème d'upload de dessin [auth.py](https://github.com/Kyosse/Projet-H/tree/main/website/auth.py) dans la fonction profil()
 - [x] Faire la maquette du site (visuelle, qu'est-ce qu'on va afficher, où, les couleurs)
-  - **base**
+  - **`base`**
   - [x] Rajouter un Header au [base.html](https://github.com/Kyosse/Projet-H/blob/main/website/templates/base.html)
   - [ ] Rajouter un footer au [base.html](https://github.com/Kyosse/Projet-H/blob/main/website/templates/base.html)
   - [ ] Programmer la barre de recherche [base.html](https://github.com/Kyosse/Projet-H/blob/main/website/templates/base.html)
   - [ ] Ajouter un light mode [base.html](https://github.com/Kyosse/Projet-H/blob/main/website/templates/base.html)
-  - **profile**
+  - **`profile`**
   - [ ] Finir la page [profile.html](https://github.com/Kyosse/Projet-H/blob/main/website/templates/profile.html)
-  - **home**
+  - **`home`**
   - [ ] Le footer(zone de texte) des cards est mal affiché quand elles n'ont pas toutes la même taille
-  - **scan**
+  - **`scan`**
   - [ ] Faire la page scan [scan.html](https://github.com/Kyosse/Projet-H/tree/main/website/scan.html)
 - [ ] A partir de la maquette établir une version de test avec les fonctionnalités principale (image)
 - [ ] **Modéliser/Structurer la base de donnée des dessins & co**
