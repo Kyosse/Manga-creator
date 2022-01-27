@@ -25,7 +25,7 @@ Module python utilisées :
 - [x] Utilisation de JINJA
   - [x] Simplification des Cards de la page [home.html](https://github.com/Kyosse/Projet-H/blob/main/website/templates/home.html)
 - [x] Se renseigner sur le coté serveur
-  - [ ] Réglé le problème d'upload de dessin [auth.py](https://github.com/Kyosse/Projet-H/tree/main/website/auth.py) dans la fonction profi()
+  - [ ] Réglé le problème d'upload de dessin [auth.py](https://github.com/Kyosse/Projet-H/tree/main/website/auth.py) dans la fonction profil()
 - [x] Faire la maquette du site (visuelle, qu'est-ce qu'on va afficher, où, les couleurs)
   - **base**
   - [x] Rajouter un Header au [base.html](https://github.com/Kyosse/Projet-H/blob/main/website/templates/base.html)
