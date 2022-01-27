@@ -1,5 +1,3 @@
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Le site web ici</a>
-<a href="https://uwuhtestserver.000webhostapp.com/">nan je rigole c'est lui</a>
 
 # PROJET-Manga-Creator
 
