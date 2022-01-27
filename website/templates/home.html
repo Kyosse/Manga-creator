@@ -1,0 +1,240 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+
+<div class="contenair-fluid p-4 my-4 rounded-3 bg-dark">
+  <h2 class="mb-4 fw-bold text-center text-white">
+    <i class="fab fa-hotjar color-icon text-center text-warning"></i> Popular
+    Now
+  </h2>
+  <div class="m-2">
+    <div class="card-group">
+      {% for i in range(5)%}
+
+      <div
+        class="card mx-1 rounded-3 bg-secondary shadow"
+        style="--bs-bg-opacity: 0.15"
+      >
+        <img
+          class="rounded-3 img-fluid"
+          src="/static/images/{{ popular[i]['img'] }}"
+          alt=""
+          width="100%"
+        />
+        <a href="/scan" class="stretched-link"></a>
+        <div class="card-footer">
+          <small
+            class="text-warning text-truncate d-inline-block"
+            style="--bs-text-opacity: 0.7; max-width: 100%"
+            >{{ popular[i]['desc'] }}
+          </small>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="contenair-fluid p-4 my-4 rounded-3 bg-dark">
+  <h2 class="mb-4 fw-bold text-center text-white">
+    <i class="fa fa-paper-plane color-icon text-center text-warning"></i>
+    Newest
+  </h2>
+  <div class="m-2">
+    <div class="card-group">
+      <div
+        class="card mx-1 rounded-3 bg-secondary shadow"
+        style="--bs-bg-opacity: 0.15"
+      >
+        <img
+          class="rounded-3 img-fluid"
+          src="/static/images/test_home.png"
+          alt=""
+          width="100%"
+        />
+        <a href="/scan" class="stretched-link"></a>
+        <div class="card-footer">
+          <small
+            class="text-warning text-truncate d-inline-block"
+            style="--bs-text-opacity: 0.7; max-width: 100%"
+            >test
+          </small>
+        </div>
+      </div>
+      <div
+        class="card mx-1 rounded-3 bg-secondary shadow"
+        style="--bs-bg-opacity: 0.15"
+      >
+        <img
+          class="rounded-3 img-fluid"
+          src="/static/images/test_home.png"
+          alt=""
+          width="100%"
+        />
+        <a href="/scan" class="stretched-link"></a>
+        <div class="card-footer">
+          <small
+            class="text-warning text-truncate d-inline-block"
+            style="--bs-text-opacity: 0.7; max-width: 100%"
+            >test
+          </small>
+        </div>
+      </div>
+      <div
+        class="card mx-1 rounded-3 bg-secondary shadow"
+        style="--bs-bg-opacity: 0.15"
+      >
+        <img
+          class="rounded-3 img-fluid"
+          src="/static/images/test_home.png"
+          alt=""
+          width="100%"
+        />
+        <a href="/scan" class="stretched-link"></a>
+        <div class="card-footer">
+          <small
+            class="text-warning text-truncate d-inline-block"
+            style="--bs-text-opacity: 0.7; max-width: 100%"
+            >test
+          </small>
+        </div>
+      </div>
+      <div
+        class="card mx-1 rounded-3 bg-secondary shadow"
+        style="--bs-bg-opacity: 0.15"
+      >
+        <img
+          class="rounded-3 img-fluid"
+          src="/static/images/test_home.png"
+          alt=""
+          width="100%"
+        />
+        <a href="/scan" class="stretched-link"></a>
+        <div class="card-footer">
+          <small
+            class="text-warning text-truncate d-inline-block"
+            style="--bs-text-opacity: 0.7; max-width: 100%"
+            >test
+          </small>
+        </div>
+      </div>
+      <div
+        class="card mx-1 rounded-3 bg-secondary shadow"
+        style="--bs-bg-opacity: 0.15"
+      >
+        <img
+          class="rounded-3 img-fluid"
+          src="/static/images/test_home.png"
+          alt=""
+          width="100%"
+        />
+        <a href="/scan" class="stretched-link"></a>
+        <div class="card-footer">
+          <small
+            class="text-warning text-truncate d-inline-block"
+            style="--bs-text-opacity: 0.7; max-width: 100%"
+            >test
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="m-2">
+    <div class="card-group">
+      <div
+        class="card mx-1 rounded-3 bg-secondary shadow"
+        style="--bs-bg-opacity: 0.15"
+      >
+        <img
+          class="rounded-3 img-fluid"
+          src="/static/images/test_home.png"
+          alt=""
+          width="100%"
+        />
+        <a href="/scan" class="stretched-link"></a>
+        <div class="card-footer">
+          <small
+            class="text-warning text-truncate d-inline-block"
+            style="--bs-text-opacity: 0.7; max-width: 100%"
+            >test
+          </small>
+        </div>
+      </div>
+      <div
+        class="card mx-1 rounded-3 bg-secondary shadow"
+        style="--bs-bg-opacity: 0.15"
+      >
+        <img
+          class="rounded-3 img-fluid"
+          src="/static/images/test_home.png"
+          alt=""
+          width="100%"
+        />
+        <a href="/scan" class="stretched-link"></a>
+        <div class="card-footer">
+          <small
+            class="text-warning text-truncate d-inline-block"
+            style="--bs-text-opacity: 0.7; max-width: 100%"
+            >test
+          </small>
+        </div>
+      </div>
+      <div
+        class="card mx-1 rounded-3 bg-secondary shadow"
+        style="--bs-bg-opacity: 0.15"
+      >
+        <img
+          class="rounded-3 img-fluid"
+          src="/static/images/test_home.png"
+          alt=""
+          width="100%"
+        />
+        <a href="/scan" class="stretched-link"></a>
+        <div class="card-footer">
+          <small
+            class="text-warning text-truncate d-inline-block"
+            style="--bs-text-opacity: 0.7; max-width: 100%"
+            >test
+          </small>
+        </div>
+      </div>
+      <div
+        class="card mx-1 rounded-3 bg-secondary shadow"
+        style="--bs-bg-opacity: 0.15"
+      >
+        <img
+          class="rounded-3 img-fluid"
+          src="/static/images/test_home.png"
+          alt=""
+          width="100%"
+        />
+        <a href="/scan" class="stretched-link"></a>
+        <div class="card-footer">
+          <small
+            class="text-warning text-truncate d-inline-block"
+            style="--bs-text-opacity: 0.7; max-width: 100%"
+            >test
+          </small>
+        </div>
+      </div>
+
+      <div
+        class="card mx-1 rounded-3 bg-secondary shadow"
+        style="--bs-bg-opacity: 0.15"
+      >
+        <img
+          class="rounded-3 img-fluid"
+          src="/static/images/{{ popular[0]['img'] }}"
+          alt=""
+          width="100%"
+        />
+        <a href="/scan" class="stretched-link"></a>
+        <div class="card-footer">
+          <small
+            class="text-warning text-truncate d-inline-block"
+            style="--bs-text-opacity: 0.7; max-width: 100%"
+            >test
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

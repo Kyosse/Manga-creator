@@ -16,22 +16,33 @@ def create_app():
     app.config['UPLOAD_FOLDER'] = 'website/static/images/scan/' 
     app.config['MAX_CONTENT_PATH'] = 20 * 1024 * 1024
     db.init_app(app) # Lancement de la BDD
-    
-    
-    
-     # Import du model de la BDD
+
+    # Import des fichiers auth et views pour la gestion des url
+    from .views import views
+    from .auth import auth
+
+    app.register_blueprint(views, url_prefix='/')
+    app.register_blueprint(auth, url_prefix='/')
+
+    # Import du model de la BDD
     from .models import User, Manga
 
     create_database(app) # Initialisation du modèle de la BDD
-    
+
+    login_manager = LoginManager() # Lancement du module de gestion des mdp par Flask
+    login_manager.login_view = 'auth.login' # Authorization de décoder les mdp seulement dans le cas de la fonction login du fichier auth
+    login_manager.init_app(app) 
+
+    @login_manager.user_loader # Gestion des info user pour le login
+    def load_user(id):
+        return User.query.get(int(id))
+
     return app
 
 def create_database(app):
-    """[Créer le fichier de la base de donnée si il n'est pas déjà présent
+    """Créer le fichier de la base de donnée si il n'est pas déjà présent
 
-    Args:
-        app :
     """
     if not path.exists('website/' + DB_NAME):
         db.create_all(app=app)
-        
+        print('Created Database !')

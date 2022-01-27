@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
 from flask_login import login_required, current_user
-
+from .scan_home import cinq, update_popular
 
 views = Blueprint('views', __name__)
 
@@ -14,9 +14,9 @@ pour empecher d'accèder à la page sans être connecté
 
 @views.route('/')
 def home():
-    
+    popular = update_popular()
 
-    return render_template("home.html", user=current_user)
+    return render_template("home.html", user=current_user,popular=popular)
 
 
 
