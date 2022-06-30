@@ -14,7 +14,7 @@ Module python utilisées :
 ## Etat du programme
 
 - Inscription/Connexion/Gestion des connexions actuel = fonctionnel
-- Page [home](https://github.com/Kyosse/Manga-creator/bob/main/website/templates/base.html) presque fini(dans les grandes lignes)
+- Page [home](https://github.com/Kyosse/Manga-creator/blob/main/website/templates/base.html) presque fini(dans les grandes lignes)
 -
 
 ### TO DO
@@ -36,7 +36,7 @@ Module python utilisées :
   - **`home`**
   - [ ] Le footer(zone de texte) des cards est mal affiché quand elles n'ont pas toutes la même taille
   - **`scan`**
-  - [ ] Faire la page scan [scan.html](https://github.com/Kyosse/Manga-creator/blob/main/website/scan.html)
+  - [ ] Faire la page scan [scan.html](https://github.com/Kyosse/Manga-creator/blob/main/website/templates/scan.html)
 - [ ] A partir de la maquette établir une version de test avec les fonctionnalités principale (image)
 - [ ] **Modéliser/Structurer la base de donnée des dessins & co**
 - [ ] Mise en ligne d'une version utilisable
