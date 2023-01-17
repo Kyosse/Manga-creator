@@ -4,8 +4,8 @@
   - ...?
 
 **INFO**
-Page web permetant aux créateurs amateurs de manga de partager leurs créations.
-Module python utilisées :
+Page web permetant aux créateurs amateurs de manga de partager leurs créations.<br>
+Modules python utilisées :
 
 - Flask
 - Flask_sqlalchemy
